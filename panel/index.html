@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Just Dance Party Panel</title>
+	<link rel="icon" href="favicon.webp" type="image/webp">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<link rel="stylesheet" href="index.css">
+	<meta name="theme-color" content="#191c1d">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+</head>
+
+<body class="mdc-theme--dark">
+
+	<aside class="mdc-drawer mdc-drawer--dismissible">
+		<div class="mdc-drawer__content">
+			<div class="mdc-drawer__header"></div>
+			<nav class="mdc-list">
+				<a id="dashboard" class="mdc-list-item mdc-list-item--activated hidden">
+					<span class="mdc-button__ripple"></span>
+					<i class="material-icons mdc-list-item__graphic" aria-hidden="true">dashboard</i>
+					<span class="mdc-list-item__text">Dashboard</span>
+				</a>
+				<a id="files" class="mdc-list-item" >
+					<span class="mdc-button__ripple"></span>
+					<i class="material-icons mdc-list-item__graphic" aria-hidden="true">folder</i>
+					<span class="mdc-list-item__text">Files Manager</span>
+				</a>
+				<a id="songlist" class="mdc-list-item">
+					<span class="mdc-button__ripple"></span>
+					<i class="material-icons mdc-list-item__graphic" aria-hidden="true">library_music</i>
+					<span class="mdc-list-item__text">Songs</span>
+				</a>
+				<a id="settings" class="mdc-list-item">
+					<span class="mdc-button__ripple"></span>
+					<i class="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+					<span class="mdc-list-item__text">Server Settings</span>
+				</a>
+			</nav>
+			<a id="back" class="mdc-list-item">
+				<span class="mdc-button__ripple"></span>
+				<i class="material-icons mdc-list-item__graphic" aria-hidden="true">arrow_left</i>
+				<span class="mdc-list-item__text">Go Back</span>
+			</a>
+		</div>
+		<div class="mdc-drawer-scrim"></div>
+	</aside>
+
+	<header class="mdc-top-app-bar">
+		<div class="mdc-top-app-bar__row">
+			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+				<button class="mdc-icon-button material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded"
+					aria-label="Open navigation menu">menu</button>
+					<button class="mdc-icon-button material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded goback"
+					aria-label="Open navigation left" onclick="backPage()">arrow_back</button>
+				<span class="mdc-top-app-bar__title panel-title">Welcome To Panel</span>
+			</section>
+			<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+				<span class="mdc-top-app-bar__title username-info">username</span>
+				<i class="material-icons mdc-list-item__graphic" aria-hidden="true">person</i>
+			</section>
+		</div>
+	</header>
+    <div class="hidden-button">
+		<div id="carousel"></div>
+		<div id="performance"></div>
+		<div id="log"></div>
+		<div id="about"></div>
+	</div>
+	<main class="mdc-top-app-bar--fixed-adjust">
+		<div class="mdc-card">
+			<h2 class="mdc-typography--headline6">Welcome To Panel</h2>
+			<p class="mdc-typography--body1">It seems that this is your first time opening this website in this session.</p>
+		</div>
+	</main>
+	<script src="index.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+
+</html>

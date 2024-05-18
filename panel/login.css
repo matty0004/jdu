@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap');
+
+:root {
+    --mdc-theme-primary: #84d2e6;
+    --mdc-theme-secondary: #bec4eb;
+    --mdc-theme-background: #191c1d;
+    --mdc-theme-surface: #293234;
+    --mdc-theme-on-primary: #FFFFFF;
+    --mdc-theme-on-secondary: #000000;
+    --mdc-theme-on-background: #FFFFFF;
+    --mdc-theme-on-surface: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+body {
+    background-color: var(--mdc-theme-background);
+    color: var(--mdc-theme-on-background);
+    font-family: 'Google Sans', sans-serif;
+}
+
+body.fetch button {
+    display: none;
+}
+
+.mdc-layout-grid {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.mdc-card {
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.mdc-card__title {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 24px 24px 0px 24px;
+}
+
+.mdc-card__subtitle {
+    font-size: 19px;
+    font-weight: 100;
+    padding: 0px 24px 0px 24px;
+}
+
+.mdc-card__content {
+    padding: 24px;
+}
+
+.mdc-text-field {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+input {
+    display: block;
+    position: relative;
+    height: 48px;
+    width: 280px;
+    border: 1px solid #c0c0c0;
+    color: #FFFFFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 16px;
+    background-color: var(--mdc-theme-background);
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--mdc-theme-primary);
+}
+
+input:focus+.label .text,
+input:not([value=""])+.label .text {
+    font-size: 12px;
+    transform: translate(0, -150%);
+    background-color: var(--mdc-theme-background);
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+input:focus+.label .text {
+    color: var(--mdc-theme-primary);
+}
+
+.label .text {
+    transition: all 0.15s ease-out;
+}
+
+button {
+    font-family: 'Google Sans', sans-serif;
+    background-color: var(--mdc-theme-primary);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 16em;
+}

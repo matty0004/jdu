@@ -1,0 +1,1 @@
+[{"method":"LOG","url":"[PARTY] Starting daemon","timestamp":"2024-05-18T09:50:33.017Z"},{"method":"LOG","url":"[PARTY] listening on port 3000","timestamp":"2024-05-18T09:50:34.522Z"},{"method":"LOG","url":"[PARTY] Open panel to see more log","timestamp":"2024-05-18T09:50:34.523Z"}]

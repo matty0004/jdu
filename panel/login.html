@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/@material/mwc-button@14.0.0/mwc-button.css">
+    <link rel="stylesheet" href="login.css">
+    <meta name="theme-color" content="#191c1d">
+    <link rel="icon" href="favicon.webp" type="image/webp">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+</head>
+
+<body class="mdc-theme--dark">
+    <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-2-tablet"></div>
+            <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-8-tablet">
+                <div class="mdc-card">
+                    <h1 class="mdc-typography--headline6 mdc-card__title">Login</h1>
+                    <h2 class="mdc-typography--headline6 mdc-card__subtitle info">Every 1 hour, the session will expire
+                    </h2>
+                    <div class="mdc-card__content">
+                        <div class="input-container">
+                            <input type="text" id="fusername" name="fusername" value=""
+                                aria-labelledby="label-fusername" />
+                            <label class="label" for="fusername" id="label-fusername">
+                                <div class="text">username</div>
+                            </label>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" id="fpassword" name="fpassword" value=""
+                                aria-labelledby="label-fpassword" />
+                            <label class="label" for="fpassword" id="label-fpassword">
+                                <div class="text">password</div>
+                            </label>
+                        </div>
+                        <button raised label="Login" onclick="login()" class="mdc-button"> <span
+                                class="mdc-button__ripple"></span> Login</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-2-tablet"></div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
