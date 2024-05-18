@@ -1,0 +1,10 @@
+{
+    "server": {
+        "port": 8000,
+        "forcePort": false,
+        "admins": [
+            {"user": "Ibratabian17", "pass": "Bumi2K20.", "role": "full"},
+            {"user": "admin2", "pass": "password2", "role": "limited"}
+        ]
+    }
+}
